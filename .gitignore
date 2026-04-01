@@ -1,0 +1,14 @@
+#Pastas geradas pelo build nunca devem commitar
+bin/
+obj/
+
+#Configurações locais
+.vs/
+*.user
+
+#Variáveis de ambiente e segredos
+.env
+appsettings.Development.json
+
+#SO
+Thumbs.db
