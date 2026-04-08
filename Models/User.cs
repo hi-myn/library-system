@@ -5,7 +5,7 @@ public class User
     public string Name { get; set; } = string.Empty;
     public string Email { get; set; } = string.Empty;
     public List<string> ActiveLoanIds { get; set; } = new();
-    public const int MaxLoans = 3;
+    public const int MaxLoans = 10;
     public bool CanBorrow => ActiveLoanIds.Count < MaxLoans;
 
 }

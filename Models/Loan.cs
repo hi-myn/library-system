@@ -7,6 +7,7 @@ public class Loan
     public DateTime LoanDate { get; set; } = DateTime.Now;
     public DateTime DueDate { get; set; } = DateTime.Now.AddDays(14);           
     public DateTime? ReturnDate { get; set; }
+    public bool IsOverdue => !IsReturned && DateTime.Now > DueDate;
     public bool IsReturned => ReturnDate.HasValue;
 
 }
